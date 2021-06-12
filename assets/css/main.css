@@ -5,7 +5,7 @@ html {
 /* about section css */
 
 #description {
-  padding-top: 20px;
+  
   padding-left: 30px;
   padding-right: 30px;
   font-size: 17px;
@@ -42,6 +42,39 @@ html {
 }
 
 /* end of the about section css */
+
+/* organize section */
+
+#organize {
+  background-color: #330033;
+}
+
+#organize .container {
+  padding-bottom: 10px;
+  padding-top: 30px;
+  vertical-align: middle;
+}
+#organize .container .row{
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* organize section end */
+
+/* challenges section */
+
+@media (max-width: 476px) {
+  #descriptionChalleges {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 21px;
+    padding-bottom: 20px;
+  }
+}
+
+/* challenges section end */
 
 body {
   background: #fff;
@@ -1021,6 +1054,49 @@ a.back-to-top:focus {
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
 }
 
+.event-partner-title{
+  color: #212121;
+  line-height: 52px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.event-partner-title:before {
+  position: absolute;
+  content: "";
+  left: 15px;
+  bottom: 8px;
+  width: 48px;
+  height: 1px;
+  background-color: #e91e63;
+}
+
+.event-partner-title:after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  bottom: 2px;
+  width: 48px;
+  height: 1px;
+  background-color: #e91e63;
+}
+
+.event-partner-title:before,
+.event-partner-title:after {
+  left: 50%;
+  margin-left: -45px;
+}
+
+.event-partner-title:after {
+  margin-left: -30px;
+}
+
+
+
 /* Schedule Area */
 .main-timeline {
   font-family: "Roboto", sans-serif;
@@ -1124,6 +1200,7 @@ a.back-to-top:focus {
   margin: 0 0 7px 0;
 }
 .main-timeline .description {
+  font-family: "Lato", sans-serif;
   color: #222;
   font-size: 15px;
   letter-spacing: 1px;
@@ -1756,16 +1833,46 @@ a.back-to-top:focus {
 .time-countdown {
   margin: 15px 0px 50px 0;
 }
+.heading-count:before {
+  position: absolute;
+  content: "";
+  left: 15px;
+  bottom: 8px;
+  width: 48px;
+  height: 1px;
+  background-color: #e91e63;
+}
+
+.heading-count:after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  bottom: 2px;
+  width: 48px;
+  height: 1px;
+  background-color: #e91e63;
+}
+
+.heading-count:before,
+.heading-count:after {
+  left: 50%;
+  margin-left: -45px;
+}
+
+.heading-count:after {
+  margin-left: -30px;
+}
+
 
 /* Pricing Ticket */
 .gold {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
 }
 
 .silver {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
 }
 .lkr-gold {
   color: #ffd700;
@@ -1829,7 +1936,7 @@ a.back-to-top:focus {
 }
 
 #main-slide .carousel-item .carousel-caption .heading {
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
@@ -1854,7 +1961,7 @@ a.back-to-top:focus {
 }
 
 #main-slide .carousel-caption .btn {
-  margin: 25px 25px 0px 0px;
+  margin: 25px 0px 0px 0px;
 }
 
 #main-slide .carousel-control-next,
@@ -1919,4 +2026,13 @@ a.back-to-top:focus {
 .logo-text {
   color: #e91e63;
   font-weight: bolder;
+  font-size:larger !important;
 }
+
+
+
+/* cover image */
+.pc-cover{
+  top: -90px !important;
+}
+
